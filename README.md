@@ -1,5 +1,6 @@
 ## axios用法
 >  原文地址 http://www.kancloud.cn/yunye/axios/234845
+
 ### 特征
 * 从浏览器中创建 XMLHttpRequests(跟其它ajax库一样)
 * 从 node.js 创建 http 请求(后端？)
@@ -20,7 +21,6 @@ axios.get('/user?ID=12345')
   .catch(function (error) {
     console.log(error);
   });
-
 // 可选地，上面的请求可以这样做
 axios.get('/user', {
     params: {
