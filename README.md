@@ -34,7 +34,7 @@ axios.get('/user', {
     console.log(error);
   });
 ```
-#### 执行 GET 请求
+#### 执行 POST 请求
 ```
 axios.post('/user', {
     firstName: 'Fred',
@@ -47,7 +47,7 @@ axios.post('/user', {
     console.log(error);
   });
 ```
-#### 执行 GET 请求
+#### 执行多个并发请求
 ```
 function getUserAccount() {
   return axios.get('/user/12345');
@@ -62,4 +62,3 @@ axios.all([getUserAccount(), getUserPermissions()])
     // 两个请求现在都执行完成
   }));
   ```
-  
