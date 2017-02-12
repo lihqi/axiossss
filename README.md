@@ -14,7 +14,7 @@
 ### 例子
 
 #### 执行 GET 请求
-```
+```js
 // 为给定 ID 的 user 创建请求
 axios.get('/user?ID=12345')
   .then(function (response) {
@@ -37,7 +37,7 @@ axios.get('/user', {
   });
 ```
 #### 执行 POST 请求
-```
+```js
 axios.post('/user', {
     firstName: 'Fred',
     lastName: 'Flintstone'
@@ -50,7 +50,7 @@ axios.post('/user', {
   });
 ```
 #### 执行多个并发请求
-```
+```js
 function getUserAccount() {
   return axios.get('/user/12345');
 }
